@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT TUTORIAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Colors */
+        .bg-gradient-custom {
+            background: linear-gradient(180deg, #FFEB3B 0%, #FB8C00 50%, #5D4037 100%);
+        }
+        .btn-link {
+            background-color: white;
+            color: #5D4037;
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            transform: scale(1.05);
+            background-color: #FBC02D;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gradient-custom min-h-screen flex flex-col items-center py-12 px-6">
+
+    <div class="text-center mb-8">
+        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 border-4 border-custom-orange shadow-lg flex items-center justify-center overflow-hidden"><img src="data:image/jpeg;base64,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"
+             <span class="text-3xl font-bold text-orange-600"></span>
+   
+             
+        </div
+        <h1 class="text-white text-2xl font-bold drop-shadow-md">IT Tutorial FMM</h1>
+        <p class="text-white opacity-90 text-sm italic">IT Tutorial</p>
+    </div>
+
+    <div class="w-full max-w-md space-y-4">
+        
+    </a>
+        <a href="Tutorial.html" class="btn-link block w-full py-4 px-6 rounded-xl text-center font-bold shadow-md">
+            📸 Tutorial
+        </a>
+        </a>
+
+        <a href="https://www.fajarmasmurni.com/" class="btn-link block w-full py-4 px-6 rounded-xl text-center font-bold shadow-md">
+            🌐 Website Resmi FMM
+        </a>
+
+        <a href="085692489551" class="btn-link block w-full py-4 px-6 rounded-xl text-center font-bold shadow-md">
+            ✉️ Hubungi Saya (WhatsApp)
+        </a>
+
+    </div>
+
+    <footer class="mt-auto pt-12 text-white text-xs opacity-70">
+        &copy; 2026 IT FMM | Dibuat untuk Tutorial
+    </footer>
+</body>
+</html>
